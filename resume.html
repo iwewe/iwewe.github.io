@@ -290,6 +290,9 @@
       body {
         background: white;
         padding: 0;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        color-adjust: exact;
       }
 
       .container {
@@ -300,7 +303,7 @@
       }
 
       .print-button {
-        display: none;
+        display: none !important;
       }
 
       .section {
@@ -311,13 +314,88 @@
         page-break-inside: avoid;
       }
 
+      /* Preserve Grid Layouts for ATS */
+      .competencies {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 15px !important;
+        page-break-inside: avoid;
+      }
+
+      .competency-category {
+        page-break-inside: avoid;
+      }
+
+      .skills-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px !important;
+        page-break-inside: avoid;
+      }
+
+      .skill-category {
+        page-break-inside: avoid;
+      }
+
+      .certifications-list {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 6px !important;
+        page-break-inside: avoid;
+      }
+
+      .coursework ul {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 3px !important;
+      }
+
+      /* Ensure text remains selectable (not rasterized) */
+      * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      /* Keep colors for better readability */
+      .section-title {
+        color: #00796b !important;
+        border-bottom: 2px solid #00796b !important;
+      }
+
+      .header h1 {
+        color: #00796b !important;
+      }
+
+      .company {
+        color: #00796b !important;
+      }
+
+      .university {
+        color: #00796b !important;
+      }
+
       a {
-        color: #333;
+        color: #333 !important;
         text-decoration: none;
+      }
+
+      .contact-info a {
+        color: #00796b !important;
       }
 
       .contact-info a:after {
         content: "";
+      }
+
+      /* Prevent orphans and widows */
+      p, li {
+        orphans: 3;
+        widows: 3;
+      }
+
+      /* Ensure proper spacing */
+      .section {
+        margin-bottom: 18px;
       }
     }
 
