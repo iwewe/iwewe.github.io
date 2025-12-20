@@ -158,9 +158,17 @@ Digitalized and automated business processes for Asia Regional Office with custo
 
 ## 🎓 Education
 
-**Bachelor of Engineering in Electrical Engineering**
-*Universitas Atma Jaya Yogyakarta*
-Major: Information Technology and Telecommunications
+**Bachelor of Science**
+*[Sanata Dharma University](https://www.usd.ac.id/)*
+**GPA:** 3.5/4.0
+
+**Relevant Courseworks:**
+- Data Structures and Algorithms
+- Database Management Systems
+- Operating Systems
+- Machine Learning
+- Computer Vision
+
 *1999 - 2004 | Yogyakarta, Indonesia*
 
 ---
