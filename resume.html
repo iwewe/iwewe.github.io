@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ignasius Wahyu Widodo - IT Infrastructure Leader | GRC Professional | Cybersecurity Enthusiast">
+  <title>Ignasius Wahyu Widodo - Resume</title>
+
+  <style>
+    /* Reset and Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', 'Helvetica', sans-serif;
+      font-size: 11pt;
+      line-height: 1.5;
+      color: #333;
+      background: #f5f5f5;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 8.5in;
+      margin: 0 auto;
+      background: white;
+      padding: 0.75in;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    /* Print Button */
+    .print-button {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #00796b;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 4px;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+      z-index: 1000;
+    }
+
+    .print-button:hover {
+      background: #004d40;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transform: translateY(-2px);
+    }
+
+    .print-button i {
+      margin-right: 8px;
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #00796b;
+      padding-bottom: 15px;
+    }
+
+    .header h1 {
+      font-size: 28pt;
+      font-weight: 700;
+      color: #00796b;
+      margin-bottom: 5px;
+      letter-spacing: 0.5px;
+    }
+
+    .header .title {
+      font-size: 13pt;
+      color: #555;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      font-size: 10pt;
+      color: #666;
+      margin-top: 10px;
+    }
+
+    .contact-info a {
+      color: #00796b;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-info .separator {
+      color: #ccc;
+    }
+
+    /* Section Styles */
+    .section {
+      margin-bottom: 20px;
+      page-break-inside: avoid;
+    }
+
+    .section-title {
+      font-size: 14pt;
+      font-weight: 700;
+      color: #00796b;
+      text-transform: uppercase;
+      border-bottom: 2px solid #00796b;
+      padding-bottom: 5px;
+      margin-bottom: 12px;
+      letter-spacing: 1px;
+    }
+
+    /* Professional Summary */
+    .summary {
+      text-align: justify;
+      line-height: 1.6;
+    }
+
+    /* Core Competencies */
+    .competencies {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+
+    .competency-category h3 {
+      font-size: 11pt;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 6px;
+    }
+
+    .competency-category ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .competency-category li {
+      padding-left: 15px;
+      position: relative;
+      margin-bottom: 3px;
+      font-size: 10pt;
+    }
+
+    .competency-category li:before {
+      content: "▸";
+      position: absolute;
+      left: 0;
+      color: #00796b;
+      font-weight: bold;
+    }
+
+    /* Experience */
+    .job {
+      margin-bottom: 18px;
+      page-break-inside: avoid;
+    }
+
+    .job-header {
+      margin-bottom: 8px;
+    }
+
+    .job-title {
+      font-size: 12pt;
+      font-weight: 700;
+      color: #333;
+    }
+
+    .company {
+      font-size: 11pt;
+      font-weight: 600;
+      color: #00796b;
+    }
+
+    .job-meta {
+      font-size: 10pt;
+      color: #666;
+      font-style: italic;
+      margin-top: 2px;
+    }
+
+    .job-description ul {
+      margin-top: 6px;
+      padding-left: 20px;
+    }
+
+    .job-description li {
+      margin-bottom: 4px;
+      font-size: 10pt;
+      line-height: 1.5;
+    }
+
+    .technologies {
+      margin-top: 6px;
+      font-size: 9pt;
+      color: #666;
+      font-style: italic;
+    }
+
+    /* Skills */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .skill-category h3 {
+      font-size: 11pt;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 6px;
+    }
+
+    .skill-category p {
+      font-size: 10pt;
+      line-height: 1.6;
+    }
+
+    /* Education */
+    .education-item {
+      margin-bottom: 10px;
+    }
+
+    .degree {
+      font-size: 11pt;
+      font-weight: 700;
+      color: #333;
+    }
+
+    .university {
+      font-size: 10pt;
+      font-weight: 600;
+      color: #00796b;
+    }
+
+    .education-meta {
+      font-size: 10pt;
+      color: #666;
+      margin-top: 2px;
+    }
+
+    .coursework {
+      font-size: 10pt;
+      margin-top: 6px;
+    }
+
+    .coursework ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3px;
+      margin-top: 4px;
+      padding-left: 20px;
+    }
+
+    /* Certifications */
+    .certifications-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 6px;
+      font-size: 10pt;
+    }
+
+    .certifications-list li {
+      padding-left: 15px;
+      position: relative;
+    }
+
+    .certifications-list li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #00796b;
+      font-weight: bold;
+    }
+
+    /* Projects */
+    .project {
+      margin-bottom: 12px;
+    }
+
+    .project-title {
+      font-size: 11pt;
+      font-weight: 700;
+      color: #333;
+    }
+
+    .project-description {
+      font-size: 10pt;
+      margin-top: 3px;
+      line-height: 1.5;
+    }
+
+    /* Volunteering */
+    .volunteer-item {
+      margin-bottom: 10px;
+    }
+
+    .volunteer-org {
+      font-size: 11pt;
+      font-weight: 700;
+      color: #333;
+    }
+
+    .volunteer-meta {
+      font-size: 10pt;
+      color: #666;
+      font-style: italic;
+    }
+
+    .volunteer-description {
+      font-size: 10pt;
+      margin-top: 3px;
+    }
+
+    /* Print Styles */
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 100%;
+        margin: 0;
+        padding: 0.5in;
+        box-shadow: none;
+      }
+
+      .print-button {
+        display: none;
+      }
+
+      .section {
+        page-break-inside: avoid;
+      }
+
+      .job {
+        page-break-inside: avoid;
+      }
+
+      a {
+        color: #333;
+        text-decoration: none;
+      }
+
+      .contact-info a:after {
+        content: "";
+      }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px;
+      }
+
+      .competencies,
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .certifications-list,
+      .coursework ul {
+        grid-template-columns: 1fr;
+      }
+
+      .print-button {
+        position: static;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- Print Button -->
+  <button class="print-button" onclick="window.print()">
+    <i class="fas fa-print"></i>
+    Print / Save as PDF
+  </button>
+
+  <div class="container">
+
+    <!-- Header -->
+    <header class="header">
+      <h1>IGNASIUS WAHYU WIDODO</h1>
+      <div class="title">IT Infrastructure Leader | GRC Professional | Cybersecurity Enthusiast</div>
+      <div class="contact-info">
+        <span><i class="fas fa-envelope"></i> <a href="mailto:iwewe@iww.my.id">iwewe@iww.my.id</a></span>
+        <span class="separator">|</span>
+        <span><i class="fas fa-phone"></i> +62 819 1975 5758</span>
+        <span class="separator">|</span>
+        <span><i class="fas fa-globe"></i> <a href="https://www.iww.my.id">www.iww.my.id</a></span>
+        <span class="separator">|</span>
+        <span><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/iwewe">linkedin.com/in/iwewe</a></span>
+        <span class="separator">|</span>
+        <span><i class="fab fa-github"></i> <a href="https://github.com/iwewe">github.com/iwewe</a></span>
+      </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section class="section">
+      <h2 class="section-title">Professional Summary</h2>
+      <div class="summary">
+        <p>Distinguished IT Leader with over 15 years of experience in spearheading infrastructure projects, managing comprehensive service delivery, and ensuring the robust and secure functioning of IT systems. Proficient in developing IT policies and integrating quality standards such as ISO 9001, ISO 27001, and the NIST framework for information security. Expert in incident mitigation, detailed documentation, and resource allocation with extensive expertise covering network infrastructure, cloud & SaaS, operating systems, and enterprise applications. Self-driven, quick starter, passionate IT infrastructure professional with a curious mind who enjoys solving complex and challenging real-world problems.</p>
+      </div>
+    </section>
+
+    <!-- Core Competencies -->
+    <section class="section">
+      <h2 class="section-title">Core Competencies</h2>
+      <div class="competencies">
+        <div class="competency-category">
+          <h3>Governance, Risk & Compliance</h3>
+          <ul>
+            <li>ISO 27001 & ISO 9001 Implementation</li>
+            <li>NIST Cybersecurity Framework</li>
+            <li>ITIL Foundation v4</li>
+            <li>Risk Management & Assessment</li>
+            <li>Compliance Testing & Auditing</li>
+            <li>Security Policy Development</li>
+          </ul>
+        </div>
+        <div class="competency-category">
+          <h3>IT Infrastructure & Operations</h3>
+          <ul>
+            <li>Network Infrastructure Management</li>
+            <li>Cloud Infrastructure (AWS, GCP, Azure)</li>
+            <li>Linux/Unix Administration</li>
+            <li>Windows Server Administration</li>
+            <li>Disaster Recovery & BC Planning</li>
+            <li>Service Delivery Management</li>
+          </ul>
+        </div>
+        <div class="competency-category">
+          <h3>Leadership & Project Management</h3>
+          <ul>
+            <li>Team Leadership (6+ members)</li>
+            <li>Project Management (PMP, Scrum, Agile)</li>
+            <li>IT Budget Planning & Allocation</li>
+            <li>Cross-functional Collaboration</li>
+            <li>International Operations (75+ offices)</li>
+          </ul>
+        </div>
+        <div class="competency-category">
+          <h3>Security & Technologies</h3>
+          <ul>
+            <li>Firewall Management (Palo Alto, Checkpoint)</li>
+            <li>Network Devices (Cisco, Juniper, Ruckus)</li>
+            <li>VPN Configuration & Management</li>
+            <li>Security Incident Response</li>
+            <li>Vulnerability Management</li>
+            <li>Security Awareness Training</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section class="section">
+      <h2 class="section-title">Professional Experience</h2>
+
+      <!-- Job 1 -->
+      <div class="job">
+        <div class="job-header">
+          <div class="job-title">IT Manager</div>
+          <div class="company">Combine Resources Institution</div>
+          <div class="job-meta">Oct 2023 - Present | Yogyakarta, Indonesia</div>
+        </div>
+        <div class="job-description">
+          <ul>
+            <li>Spearheaded regional cybersecurity initiative to protect human rights defenders and civil society organizations across Asia, delivering strategic guidance and hands-on technical support in high-risk environments</li>
+            <li>Designed and delivered targeted digital security and resilience training programs, building local capacity and strengthening frontline organizational readiness</li>
+            <li>Collaborated with regional partners to implement integrated support systems, including secure communication tools, network security protocols, and crisis response strategies</li>
+            <li>Led successful implementation of Sistem Informasi Desa project across Indonesia, ensuring secure, reliable technology solutions for community development</li>
+            <li>Championed long-term organizational resilience and digital wellbeing by advancing cybersecurity awareness and infrastructure sustainability across Asia-Pacific</li>
+            <li>Provided technology support to Emergency Response Units during disaster relief operations, ensuring continuity and secure communications in emergency contexts</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Job 2 -->
+      <div class="job">
+        <div class="job-header">
+          <div class="job-title">IT Infrastructure Assistant Manager</div>
+          <div class="company">Sysmex Asia Pacific</div>
+          <div class="job-meta">May 2022 - Nov 2023 | Jakarta, Indonesia</div>
+        </div>
+        <div class="job-description">
+          <ul>
+            <li>Ensured efficient functioning of IT infrastructure with embedded security measures across Asia Pacific operations</li>
+            <li>Led security incident management, resolution, and reporting processes</li>
+            <li>Implemented comprehensive security awareness programs for regional staff</li>
+            <li>Achieved 100% IT infrastructure standard compliance by Asia Regional and Corporate audit teams</li>
+            <li>Planned and executed ISO 27001 and ISO 9001 engagements successfully</li>
+          </ul>
+          <div class="technologies"><strong>Technologies:</strong> SharePoint, SAP S4/HANA, Windows Server, Ruckus, Juniper, Aruba</div>
+        </div>
+      </div>
+
+      <!-- Job 3 -->
+      <div class="job">
+        <div class="job-header">
+          <div class="job-title">Technical Project Solution Specialist</div>
+          <div class="company">Food for the Hungry</div>
+          <div class="job-meta">Oct 2019 - Dec 2020 | Arizona, United States</div>
+        </div>
+        <div class="job-description">
+          <ul>
+            <li>Oversaw IT operations in 75 offices across 20+ countries (US, Asia, Africa, Latin America)</li>
+            <li>Provided technical leadership and guidance to international IT staff across diverse time zones and cultures</li>
+            <li>Conducted thorough IT audits and After Action Reviews to ensure operational excellence</li>
+            <li>Developed and implemented common IT standards and best practices across all international offices</li>
+            <li>Managed IT security initiatives including risk assessments, vulnerability management, and incident response</li>
+          </ul>
+          <div class="technologies"><strong>Technologies:</strong> Python, Odoo, JIRA, Palo Alto, Power BI</div>
+        </div>
+      </div>
+
+      <!-- Job 4 -->
+      <div class="job">
+        <div class="job-header">
+          <div class="job-title">Asia Regional IT Manager</div>
+          <div class="company">Food for the Hungry</div>
+          <div class="job-meta">Oct 2018 - Sep 2019 | Kuala Lumpur, Malaysia</div>
+        </div>
+        <div class="job-description">
+          <ul>
+            <li>Successfully managed and supervised a team of 6 Asia IT officers across multiple countries</li>
+            <li>Developed and maintained comprehensive IT policies and Standard Operating Procedures</li>
+            <li>Delivered excellent service and support to 400+ regional staff members</li>
+            <li>Achieved significant cost-savings through functional solutions to software license challenges</li>
+            <li>Communicated and enforced global security standards across Asia region</li>
+          </ul>
+          <div class="technologies"><strong>Technologies:</strong> JIRA, Ubuntu, Checkpoint, Unifi, OKTA, Synology, Ruckus, Cisco</div>
+        </div>
+      </div>
+
+      <!-- Job 5 -->
+      <div class="job">
+        <div class="job-header">
+          <div class="job-title">Asia Regional IT Administrator</div>
+          <div class="company">Food for the Hungry</div>
+          <div class="job-meta">Jan 2011 - Sep 2018 | Kuala Lumpur, Malaysia</div>
+        </div>
+        <div class="job-description">
+          <ul>
+            <li>Led comprehensive project to replace Microsoft Windows with FH-Ubuntu in several countries</li>
+            <li>Enhanced security posture, reduced software piracy, and increased system performance</li>
+            <li>Conducted regular visits to field offices across Asia for IT performance assessment and support</li>
+            <li>Implemented security controls and delivered awareness training programs to staff</li>
+          </ul>
+          <div class="technologies"><strong>Technologies:</strong> Ubuntu, Mikrotik, Cisco, Windows Server, VMWare, Checkpoint</div>
+        </div>
+      </div>
+
+      <!-- Job 6 -->
+      <div class="job">
+        <div class="job-header">
+          <div class="job-title">IT Coordinator</div>
+          <div class="company">SATUNAMA</div>
+          <div class="job-meta">Jan 2004 - Dec 2010 | Yogyakarta, Indonesia</div>
+        </div>
+        <div class="job-description">
+          <ul>
+            <li>Successfully migrated all pirated software to open-source alternatives, ensuring legal compliance</li>
+            <li>Led migration from Postfix mail server to Google Workspace for 70 staff members</li>
+            <li>Developed comprehensive server infrastructure including QA, staging, and production environments</li>
+            <li>Performed network security design and integration for organizational infrastructure</li>
+          </ul>
+          <div class="technologies"><strong>Technologies:</strong> FreeBSD, Slackware, Ubuntu, Mikrotik, Google Workspace</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="section">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Programming & Scripting</h3>
+          <p>Python, Bash/Shell Scripting, HTML/CSS/JavaScript, Java, C, C++</p>
+        </div>
+        <div class="skill-category">
+          <h3>Infrastructure & Networking</h3>
+          <p>Cisco, Mikrotik, Checkpoint, Palo Alto, Ruckus, Unifi, Juniper, Aruba, FreeBSD, Red Hat, Ubuntu, Windows Server</p>
+        </div>
+        <div class="skill-category">
+          <h3>Cloud & Virtualization</h3>
+          <p>AWS, GCP, Azure, VMWare, VirtualBox, Docker</p>
+        </div>
+        <div class="skill-category">
+          <h3>Enterprise Applications</h3>
+          <p>SAP S4/HANA, SharePoint, Odoo, OrangeHRM, JIRA, Asana, Power BI, Tableau</p>
+        </div>
+        <div class="skill-category">
+          <h3>Databases</h3>
+          <p>MySQL, PostgreSQL, Oracle</p>
+        </div>
+        <div class="skill-category">
+          <h3>Security & Compliance</h3>
+          <p>ISO 27001, ISO 9001, NIST Framework, ITIL v4, Vulnerability Management, Incident Response</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Notable Projects -->
+    <section class="section">
+      <h2 class="section-title">Notable Projects</h2>
+
+      <div class="project">
+        <div class="project-title">Migration Windows to Ubuntu (FH Asia)</div>
+        <div class="project-description">
+          Led enterprise-wide migration from Windows to Ubuntu Linux across multiple countries, resulting in enhanced security, reduced software piracy, and extended device life cycles. <em>Technologies: Ubuntu, Remastersys, Bash, VirtualBox</em>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Odoo Implementation</div>
+        <div class="project-description">
+          Digitalized and automated business processes for Asia Regional Office with customized modules for improved efficiency. <em>Technologies: Odoo, Python, PostgreSQL</em>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-title">ClearOS Gateway System</div>
+        <div class="project-description">
+          Implemented comprehensive gateway system across FH offices with firewall, VPN, proxy, and file sharing capabilities. <em>Technologies: ClearOS, Bash</em>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section">
+      <h2 class="section-title">Education</h2>
+      <div class="education-item">
+        <div class="degree">Bachelor of Science</div>
+        <div class="university">Sanata Dharma University</div>
+        <div class="education-meta">1994 - 1998 | Yogyakarta, Indonesia | GPA: 3.5/4.0</div>
+        <div class="coursework">
+          <strong>Relevant Coursework:</strong>
+          <ul>
+            <li>Data Structures and Algorithms</li>
+            <li>Database Management Systems</li>
+            <li>Operating Systems</li>
+            <li>Machine Learning</li>
+            <li>Computer Vision</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="section">
+      <h2 class="section-title">Professional Certifications</h2>
+      <ul class="certifications-list">
+        <li>AWS Certified Cloud Practitioner</li>
+        <li>Certified Information Systems Security Professional (CISSP)</li>
+        <li>Certified Cloud Security Professional (CCSP)</li>
+        <li>ITIL Foundation 4</li>
+        <li>Certified in the Governance of Enterprise IT (CGEIT)</li>
+        <li>Introduction to AWS for Non-Engineers</li>
+        <li>CISSP Cert Prep: The Basics</li>
+        <li>Azure Policies</li>
+        <li>Check Point Jump Start</li>
+        <li>CISCO IT Security Makeover</li>
+        <li>Learning Jira (Cloud Edition)</li>
+      </ul>
+    </section>
+
+    <!-- Volunteering -->
+    <section class="section">
+      <h2 class="section-title">Volunteering</h2>
+
+      <div class="volunteer-item">
+        <div class="volunteer-org">Anti-Human Trafficking Intelligence Initiative (ATII)</div>
+        <div class="volunteer-meta">Currently Active</div>
+        <div class="volunteer-description">
+          Supporting mission with OSINT (Open Source Intelligence) techniques to fight human trafficking and child sexual exploitation.
+        </div>
+      </div>
+
+      <div class="volunteer-item">
+        <div class="volunteer-org">United Nations Volunteers Programme</div>
+        <div class="volunteer-meta">Aug 2009 - Dec 2011</div>
+        <div class="volunteer-description">
+          Participated in Online Volunteering Services with project assignments including web development, remote installations, and bug fixes for NGO partners.
+        </div>
+      </div>
+    </section>
+
+    <!-- Career Objectives -->
+    <section class="section">
+      <h2 class="section-title">Career Objectives</h2>
+      <div class="summary">
+        <p>Looking for an opportunity to work in a challenging position combining skills in Governance, Risk, and Compliance, which provides professional development, interesting experiences, and personal growth. Expertise extends to disaster recovery planning, emergency response, and training, with commitment to guiding organizations through the complexities of modern technology while promoting efficiency and positive outcomes.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <script>
+    // Optional: Add keyboard shortcut for printing (Ctrl+P)
+    document.addEventListener('keydown', function(e) {
+      if (e.ctrlKey && e.key === 'p') {
+        e.preventDefault();
+        window.print();
+      }
+    });
+  </script>
+
+</body>
+</html>
