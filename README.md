@@ -47,6 +47,16 @@ Self-driven, quick starter, passionate IT infrastructure professional with a cur
 
 ## 💼 Professional Experience
 
+### **IT Manager** @ Combine Resources Institution
+*Oct 2023 - Present | Yogyakarta, Indonesia*
+
+- Spearheaded a regional cybersecurity initiative to protect human rights defenders and civil society organizations across Asia, delivering strategic guidance and hands-on technical support in high-risk environments
+- Designed and delivered targeted digital security and resilience training programs, building local capacity and strengthening frontline organizational readiness
+- Collaborated with regional partners to implement integrated support systems, including secure communication tools, network security protocols, and crisis response strategies
+- Led the successful implementation of the Sistem Informasi Desa project across Indonesia, ensuring secure, reliable technology solutions to support community development and field operations
+- Championed long-term organizational resilience and digital wellbeing by advancing cybersecurity awareness, infrastructure sustainability, and cross-border collaboration across the Asia-Pacific
+- Provided technology support to Emergency Response Units during disaster relief operations, ensuring continuity, secure communications, and rapid IT response in emergency contexts
+
 ### **IT Infrastructure Assistant Manager** @ Sysmex Asia Pacific
 *May 2022 - Nov 2023 | Jakarta, Indonesia*
 
