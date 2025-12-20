@@ -169,7 +169,7 @@ Digitalized and automated business processes for Asia Regional Office with custo
 - Machine Learning
 - Computer Vision
 
-*1999 - 2004 | Yogyakarta, Indonesia*
+*1994 - 1998 | Yogyakarta, Indonesia*
 
 ---
 
@@ -195,11 +195,12 @@ Multilingual with solid comprehension of cultural diversity, enhancing ability t
 
 ## 📫 Contact Information
 
-- **Email:** [iwidodo@outlook.com](mailto:iwidodo@outlook.com)
+- **Email:** [iwewe@iww.my.id](mailto:iwewe@iww.my.id)
 - **Phone:** +62 819 1975 5758
+- **Website:** [www.iww.my.id](https://www.iww.my.id)
 - **LinkedIn:** [linkedin.com/in/iwewe](https://linkedin.com/in/iwewe)
 - **GitHub:** [github.com/iwewe](https://github.com/iwewe)
-- **Website:** [iwewe.github.io](https://iwewe.github.io)
+- **Portfolio:** [iwewe.github.io](https://iwewe.github.io)
 - **Resume:** [Download PDF](https://iwewe.github.io/assets/resume/IgnasiusWahyuWidodo-Resume.pdf)
 
 ---
