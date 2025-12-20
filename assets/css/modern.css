@@ -604,6 +604,16 @@ main {
   color: var(--color-white);
 }
 
+.icon-btn.website {
+  color: var(--color-primary);
+  background: var(--color-white);
+}
+
+.icon-btn.website:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
 /* Floating Action Button */
 .btn-floating {
   width: 56px;
