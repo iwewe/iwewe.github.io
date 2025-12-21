@@ -352,6 +352,18 @@
         color: rgb(51, 51, 51) !important;
         font-family: Arial, Helvetica, sans-serif !important;
         font-size: 11pt !important;
+        margin-bottom: 8pt !important;
+      }
+
+      /* Add simple contact line after title for ATS */
+      .header .title::after {
+        content: "\AEmail: iwewe@iww.my.id | Phone: +62 819 1975 5758 | LinkedIn: linkedin.com/in/iwewe | Website: www.iww.my.id" !important;
+        display: block !important;
+        font-size: 10pt !important;
+        color: rgb(0, 0, 0) !important;
+        margin-top: 6pt !important;
+        font-style: normal !important;
+        white-space: pre-line !important;
       }
 
       /* Simplify contact info - remove separators */
@@ -451,18 +463,33 @@
       }
 
       /* Ensure pure black text for ATS readability */
+      .job-title {
+        color: #000 !important;
+        font-size: 12pt !important;
+        font-weight: 700 !important;
+        display: block !important;
+        margin-bottom: 2pt !important;
+      }
+
       .company {
         color: #000 !important;
         font-weight: 600 !important;
+        font-size: 11pt !important;
+        display: block !important;
+        margin-bottom: 2pt !important;
+      }
+
+      .job-meta {
+        color: #333 !important;
+        font-size: 10pt !important;
+        font-style: italic !important;
+        display: block !important;
+        margin-bottom: 8pt !important;
       }
 
       .university {
         color: #000 !important;
         font-weight: 600 !important;
-      }
-
-      .job-title {
-        color: #000 !important;
       }
 
       a {
@@ -787,17 +814,7 @@
       <div class="education-item">
         <div class="degree">Bachelor of Science</div>
         <div class="university">Sanata Dharma University</div>
-        <div class="education-meta">1994 - 1998 | Yogyakarta, Indonesia | GPA: 3.5/4.0</div>
-        <div class="coursework">
-          <strong>Relevant Coursework:</strong>
-          <ul>
-            <li>Data Structures and Algorithms</li>
-            <li>Database Management Systems</li>
-            <li>Operating Systems</li>
-            <li>Machine Learning</li>
-            <li>Computer Vision</li>
-          </ul>
-        </div>
+        <div class="education-meta">Yogyakarta, Indonesia | GPA: 3.5/4.0</div>
       </div>
     </section>
 
