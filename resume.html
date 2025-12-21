@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Ignasius Wahyu Widodo - IT Infrastructure Leader | GRC Professional | Cybersecurity Enthusiast">
+
+  <!-- PDF Rendering Meta Tags -->
+  <meta name="format-detection" content="telephone=no">
+  <meta name="color-scheme" content="light">
+
   <title>Ignasius Wahyu Widodo - Resume</title>
 
   <style>
@@ -285,48 +290,80 @@
       font-weight: bold;
     }
 
-    /* Print Styles */
+    /* Print Styles - Ultra-simplified for ATS text extraction */
     @media print {
+      /* Force text rendering, not vector conversion */
+      @page {
+        margin: 0.5in;
+      }
+
       body {
-        background: white !important;
-        padding: 0;
-        color: #000 !important;
+        background: #ffffff !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        color: rgb(0, 0, 0) !important;
+        -webkit-font-smoothing: subpixel-antialiased !important;
+        -moz-osx-font-smoothing: auto !important;
+        text-rendering: optimizeLegibility !important;
+        font-smooth: never !important;
+        -webkit-text-size-adjust: 100% !important;
       }
 
       .container {
-        max-width: 100%;
-        margin: 0;
-        padding: 0.5in;
-        box-shadow: none;
+        max-width: 100% !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-shadow: none !important;
       }
 
       .print-button {
         display: none !important;
       }
 
-      /* Hide all icons to prevent rasterization */
-      i, .fa, .fas, .fab, .far {
+      /* CRITICAL: Hide all icons to prevent font conversion */
+      i, .fa, .fas, .fab, .far,
+      [class*="fa-"],
+      .contact-info i,
+      .nav-icon {
         display: none !important;
+        visibility: hidden !important;
+        font-size: 0 !important;
+        width: 0 !important;
+        height: 0 !important;
       }
 
-      /* Hide icon elements in contact info */
-      .contact-info i {
-        display: none !important;
-      }
-
-      /* Simplify header for pure text output */
+      /* Simplify header - pure text only */
       .header {
-        border-bottom: 2px solid #000 !important;
+        border-bottom: 2px solid rgb(0, 0, 0) !important;
+        padding-bottom: 10pt !important;
+        margin-bottom: 12pt !important;
       }
 
       .header h1 {
-        color: #000 !important;
+        color: rgb(0, 0, 0) !important;
         font-family: Arial, Helvetica, sans-serif !important;
+        font-size: 24pt !important;
+        font-weight: 700 !important;
+        letter-spacing: normal !important;
       }
 
       .header .title {
-        color: #333 !important;
+        color: rgb(51, 51, 51) !important;
         font-family: Arial, Helvetica, sans-serif !important;
+        font-size: 11pt !important;
+        margin-bottom: 8pt !important;
+      }
+
+      /* Add simple contact line after title for ATS */
+      .header .title::after {
+        content: "\AEmail: iwewe@iww.my.id | Phone: +62 819 1975 5758 | LinkedIn: linkedin.com/in/iwewe | Website: www.iww.my.id" !important;
+        display: block !important;
+        font-size: 10pt !important;
+        color: rgb(0, 0, 0) !important;
+        margin-top: 6pt !important;
+        font-style: normal !important;
+        white-space: pre-line !important;
       }
 
       /* Simplify contact info - remove separators */
@@ -405,27 +442,54 @@
         background: none !important;
       }
 
-      /* Simplify all text elements */
-      * {
+      /* CRITICAL: Force all text to use system fonts - prevent vector conversion */
+      *, *::before, *::after {
         font-family: Arial, Helvetica, sans-serif !important;
         background: transparent !important;
+        background-image: none !important;
         text-shadow: none !important;
         box-shadow: none !important;
+        filter: none !important;
+        transform: none !important;
+        -webkit-font-smoothing: subpixel-antialiased !important;
+        -moz-osx-font-smoothing: auto !important;
+        text-rendering: optimizeLegibility !important;
+      }
+
+      /* Ensure ALL text elements use pure black */
+      h1, h2, h3, h4, h5, h6, p, li, span, div, a {
+        color: rgb(0, 0, 0) !important;
+        font-family: Arial, Helvetica, sans-serif !important;
       }
 
       /* Ensure pure black text for ATS readability */
+      .job-title {
+        color: #000 !important;
+        font-size: 12pt !important;
+        font-weight: 700 !important;
+        display: block !important;
+        margin-bottom: 2pt !important;
+      }
+
       .company {
         color: #000 !important;
         font-weight: 600 !important;
+        font-size: 11pt !important;
+        display: block !important;
+        margin-bottom: 2pt !important;
+      }
+
+      .job-meta {
+        color: #333 !important;
+        font-size: 10pt !important;
+        font-style: italic !important;
+        display: block !important;
+        margin-bottom: 8pt !important;
       }
 
       .university {
         color: #000 !important;
         font-weight: 600 !important;
-      }
-
-      .job-title {
-        color: #000 !important;
       }
 
       a {
@@ -499,8 +563,8 @@
     }
   </style>
 
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Font Awesome for icons (screen only, not print) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="screen">
 </head>
 <body>
 
@@ -739,17 +803,7 @@
       <div class="education-item">
         <div class="degree">Bachelor of Science</div>
         <div class="university">Sanata Dharma University</div>
-        <div class="education-meta">1994 - 1998 | Yogyakarta, Indonesia | GPA: 3.5/4.0</div>
-        <div class="coursework">
-          <strong>Relevant Coursework:</strong>
-          <ul>
-            <li>Data Structures and Algorithms</li>
-            <li>Database Management Systems</li>
-            <li>Operating Systems</li>
-            <li>Machine Learning</li>
-            <li>Computer Vision</li>
-          </ul>
-        </div>
+        <div class="education-meta">Yogyakarta, Indonesia | GPA: 3.5/4.0</div>
       </div>
     </section>
 
