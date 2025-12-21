@@ -288,11 +288,9 @@
     /* Print Styles */
     @media print {
       body {
-        background: white;
+        background: white !important;
         padding: 0;
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-        color-adjust: exact;
+        color: #000 !important;
       }
 
       .container {
@@ -303,6 +301,50 @@
       }
 
       .print-button {
+        display: none !important;
+      }
+
+      /* Hide all icons to prevent rasterization */
+      i, .fa, .fas, .fab, .far {
+        display: none !important;
+      }
+
+      /* Hide icon elements in contact info */
+      .contact-info i {
+        display: none !important;
+      }
+
+      /* Simplify header for pure text output */
+      .header {
+        border-bottom: 2px solid #000 !important;
+      }
+
+      .header h1 {
+        color: #000 !important;
+        font-family: Arial, Helvetica, sans-serif !important;
+      }
+
+      .header .title {
+        color: #333 !important;
+        font-family: Arial, Helvetica, sans-serif !important;
+      }
+
+      /* Simplify contact info - remove separators */
+      .contact-info {
+        display: block !important;
+        line-height: 1.8;
+      }
+
+      .contact-info span {
+        display: inline !important;
+        margin-right: 10px;
+      }
+
+      .contact-info .separator {
+        display: none !important;
+      }
+
+      .contact-info br {
         display: none !important;
       }
 
@@ -342,6 +384,11 @@
         grid-template-columns: repeat(2, 1fr) !important;
         gap: 6px !important;
         page-break-inside: avoid;
+        list-style: none !important;
+      }
+
+      .certifications-list li:before {
+        content: "" !important;
       }
 
       .coursework ul {
@@ -350,37 +397,44 @@
         gap: 3px !important;
       }
 
-      /* Ensure text remains selectable (not rasterized) */
-      * {
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-      }
-
-      /* Keep colors for better readability */
+      /* Simplify section titles - black color for ATS */
       .section-title {
-        color: #00796b !important;
-        border-bottom: 2px solid #00796b !important;
+        color: #000 !important;
+        border-bottom: 2px solid #000 !important;
+        font-family: Arial, Helvetica, sans-serif !important;
+        background: none !important;
       }
 
-      .header h1 {
-        color: #00796b !important;
+      /* Simplify all text elements */
+      * {
+        font-family: Arial, Helvetica, sans-serif !important;
+        background: transparent !important;
+        text-shadow: none !important;
+        box-shadow: none !important;
       }
 
+      /* Ensure pure black text for ATS readability */
       .company {
-        color: #00796b !important;
+        color: #000 !important;
+        font-weight: 600 !important;
       }
 
       .university {
-        color: #00796b !important;
+        color: #000 !important;
+        font-weight: 600 !important;
+      }
+
+      .job-title {
+        color: #000 !important;
       }
 
       a {
-        color: #333 !important;
-        text-decoration: none;
+        color: #000 !important;
+        text-decoration: none !important;
       }
 
       .contact-info a {
-        color: #00796b !important;
+        color: #000 !important;
       }
 
       .contact-info a:after {
@@ -396,6 +450,28 @@
       /* Ensure proper spacing */
       .section {
         margin-bottom: 18px;
+      }
+
+      /* Remove all pseudo-elements that might cause issues */
+      .competency-category li:before,
+      .certifications-list li:before {
+        display: none !important;
+      }
+
+      /* Simplify bullets to standard */
+      ul {
+        list-style-type: disc !important;
+      }
+
+      .competency-category ul,
+      .certifications-list {
+        list-style-type: none !important;
+        padding-left: 0 !important;
+      }
+
+      .competency-category li,
+      .certifications-list li {
+        padding-left: 0 !important;
       }
     }
 
