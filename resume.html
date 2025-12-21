@@ -355,26 +355,27 @@
         margin-bottom: 8pt !important;
       }
 
-      /* Add simple contact line after title for ATS */
-      .header .title::after {
-        content: "\AEmail: iwewe@iww.my.id | Phone: +62 819 1975 5758 | LinkedIn: linkedin.com/in/iwewe | Website: www.iww.my.id" !important;
-        display: block !important;
-        font-size: 10pt !important;
-        color: rgb(0, 0, 0) !important;
-        margin-top: 6pt !important;
-        font-style: normal !important;
-        white-space: pre-line !important;
-      }
-
-      /* Simplify contact info - remove separators */
+      /* Simplify contact info - show as simple text */
       .contact-info {
         display: block !important;
-        line-height: 1.8;
+        line-height: 1.6 !important;
+        font-size: 10pt !important;
+        margin-top: 8pt !important;
       }
 
       .contact-info span {
         display: inline !important;
-        margin-right: 10px;
+        margin-right: 8px !important;
+      }
+
+      /* Show contact links as plain text */
+      .contact-info a {
+        color: #000 !important;
+        text-decoration: none !important;
+      }
+
+      .contact-info a::after {
+        content: none !important;
       }
 
       .contact-info .separator {
