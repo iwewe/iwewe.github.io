@@ -139,27 +139,57 @@ Self-driven, quick starter, passionate IT infrastructure professional with a cur
 
 ## 🚀 Notable Projects
 
-### **Migration Windows to Ubuntu (FH Asia)**
+### **UWAZI — Security Incident Documentation** *(2024–Present)*
+Deployed UWAZI (HURIDOCS) as a platform for documenting state violence and security incidents targeting Indonesian civil society. Enables structured, searchable records of human rights violations to support advocacy, legal processes, and public accountability.
+
+**Technologies:** UWAZI, Linux, Docker
+
+### **Disaster Information System — Sumatra** *(2025)*
+Developed a disaster information system supporting emergency response for natural disasters in Sumatra — real-time data processing, incident reporting, and multi-organization coordination.
+
+**Technologies:** Python, Linux
+
+### **SharePoint Online Migration** *(2023)*
+Led full migration from on-premises SharePoint to SharePoint Online including data migration, permission restructuring, and user onboarding across departments.
+
+**Technologies:** SharePoint Online, Microsoft 365, PowerShell
+
+### **SharePoint Workflow System** *(2022–2023)*
+Designed and implemented automated workflow systems on SharePoint to streamline document approval and cross-departmental coordination processes.
+
+**Technologies:** SharePoint, Power Automate, Microsoft 365
+
+### **Warehouse IT Infrastructure** *(2022)*
+Designed and deployed full IT infrastructure for a warehouse facility — wireless network, switching, and server environment.
+
+**Technologies:** Ruckus Wi-Fi, Juniper Switching, Windows Server
+
+### **Refugee Data Management System** *(2017–2018)*
+Built and implemented a refugee registration and data management system to support field operations and reporting for humanitarian programs.
+
+**Technologies:** Laravel, JavaScript, MySQL
+
+### **Migration Windows to Ubuntu (FH Asia)** *(2004–2018)*
 Led enterprise-wide migration from Windows to Ubuntu Linux across multiple countries, resulting in enhanced security, reduced software piracy, and extended device life cycles.
 
 **Technologies:** Ubuntu, Remastersys, Bash, VirtualBox
 
-### **Owncloud Service Implementation**
+### **Owncloud Service Implementation** *(2012)*
 Deployed distributed file sharing and syncing solution across country offices in FH Asia for automatic synchronization of child sponsorship files.
 
 **Technologies:** Ubuntu, Owncloud
 
-### **ClearOS Gateway System**
+### **ClearOS Gateway System** *(2010)*
 Implemented comprehensive gateway system across FH offices with firewall, VPN, proxy, and file sharing capabilities.
 
 **Technologies:** ClearOS, Bash
 
-### **OrangeHRM Implementation**
+### **OrangeHRM Implementation** *(2015)*
 Led global HR management system implementation initiative in collaboration with OrangeHRM vendor.
 
 **Technologies:** OrangeHRM, PHP, MySQL
 
-### **Odoo Implementation**
+### **Odoo Implementation** *(2018)*
 Digitalized and automated business processes for Asia Regional Office with customized modules.
 
 **Technologies:** Odoo, Python, PostgreSQL
