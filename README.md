@@ -139,7 +139,7 @@ Self-driven, quick starter, passionate IT infrastructure professional with a cur
 
 ## 🚀 Notable Projects
 
-### **UWAZI — Security Incident Documentation** *(2024–Present)*
+### **UWAZI — Security Incident Documentation** *(2025–Present)*
 Deployed UWAZI (HURIDOCS) as a platform for documenting state violence and security incidents targeting Indonesian civil society. Enables structured, searchable records of human rights violations to support advocacy, legal processes, and public accountability.
 
 **Technologies:** UWAZI, Linux, Docker
